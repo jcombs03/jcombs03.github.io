@@ -1,14 +1,115 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<!-- I do not honestly know how much I need to comment on HTML code yet. -->
 
+<html lang="en">
     <head>
         <title>Tables and Forms</title>
     </head>
+    <body>
+
+        <h1>Pizza Ordering Form<br></h1>
+        <h2>Contact Information<br></h2>
 
 
-    <body> 
-        This is a test for Tables and Forms
+        <form>
+            <!-- This block is for the text input for Name, Phone, and Email.-->
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required><br>
+
+                <label for="phone">Phone:</label>
+                <input type="phone" name="phone" id="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="123-456-7890"><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required><br>
+            
+
+            <!--Pizza Size Select Block-->
+            <h2>Select Pizza Size</h2>
+                <p>Pizza Size:
+                    <select name="size" id="size" required>
+                        <option>--Select Size--</option>
+                        <option>Medium</option>
+                        <option>Large</option>
+                        <option>XLarge</option>
+                    </select>
+                </p>
+
+
+            <!--Sauce Select Block-->
+            <h2>Select Sauce</h2>
+                <input type="radio" id="marinara" name="sauce" required>
+                <label for="marinara">Marinara</label><br>
+
+                <input type="radio" id="alfredo" name="sauce" required>
+                <label for="alfredo">Ranch</label><br>
+
+                <input type="radio" id="noSauce" name="sauce" required>
+                <label for="noSauce">No Sauce</label><br>
+
+
+            <!--Toppings Select Block-->
+            <h2>Select Toppings</h2>
+                <input type="checkbox" id="pepperoni" name="pepperoni" value="pepperoni">
+                <label for="pepperoni">Pepperoni</label>
+
+                <input type="checkbox" id="sausage" name="sausage" value="sausage">
+                <label for="sausage">Sausage</label><br>
+
+                <input type="checkbox" id="mushrooms" name="mushrooms" value="mushrooms">
+                <label for="mushrooms">Mushrooms</label>
+
+                <input type="checkbox" id="pineapple" name="pineapple" value="pineapple">
+                <label for="pineapple">Pineapple</label><br>
+
+                <input type="checkbox" id="peppers" name="peppers" value="peppers">
+                <label for="peppers">Peppers</label>
+
+                <input type="checkbox" id="onions" name="onions" value="onions">
+                <label for="onions">Onions</label><br>
+
+
+            <!--Additional Instructions Block-->
+            <h2>Additional Instructions</h2>
+                <textarea name="instructions">Add Instructions</textarea><br>
+
+
+            <!--Submit Button-->
+            <input type="submit" value="Submit"><br><br><br>
+        </form>
+
+
+        <!--Table for list of favorite games-->
+        <span>List of My Favorite Games</span>
+        <table border="1">
+            <tr>
+                <th>Developer</th>
+                <th>Title</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>Square Enix</td>
+                <td>Final Fantasy XIV</td>
+                <td>2013</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Valve</td>
+                <td>Team Fortress 2</td>
+                <td>2007</td>
+            </tr>
+            <tr>
+                <td>Portal 2</td>
+                <td>2011</td>
+            </tr>
+            <tr>
+                <td>Mojang</td>
+                <td>Minecraft</td>
+                <td>2011</td>
+            </tr>
+            <tr>
+                <td colspan="3">Count: 4</td>
+            </tr>
+        </table>
+
     </body>
-
 </html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Home Server Setup</title>
+  </head>
+
+  <body>
+    <h1>My Home Server Setup</h1>
+
+    <!--Had to add style formatting for the image, as it was too big and taking up the entire screen-->
+    <img src="server01.jpg" alt="Computer in a Dell Desktop Case on the floor"
+    style="width:700px;height:600px;">
+    
+    <p>
+        For my personal home server, I decided to go with the Linux distro TrueNAS. This is a free and open-source distro,
+        purpose-built for network attached storage systems, and is lightweight enough to be ran on the 18 year old hardware
+        my family had lying around.
+    </p>
+
+    <p>
+        The hardware I used for this build is the following:
+        <ul>
+            <li>CPU: Intel Core 2 Quad Q8300</li>
+            <li>GPU: AMD Radeon R7 360</li>
+            <li>RAM: 8GB DDR3</li>
+            <li>Storage: 1x 3TB HDD, 1x 1TB HDD, 2x 800GB SSD, all running in RAID0 configuration</li>
+            <li>Power Supply: 500W Generic PSU</li>
+        </ul>
+    </p>
+
+    <p>
+        This server has been able to meet my needs for running docker containers, media streaming, and file sharing.<br>
+    The apps I run include:
+        <ul>
+            <li>Plex Media Server</li>
+            <li>Dockge for container management</li>
+            <li>Metube for YouTube video downloading</li>
+            <li>QBitTorrent for <em>LEGAL</em> file sharing</li>
+            <li>Wireguard for secure VPN connections</li>
+        </ul>
+    </p>
+
+    <p>
+        Setup was simple enough, with me creating a bootable USB drive using Ventoy and installing TrueNAS on the system. Once 
+        the initial installation was complete, I was able to access the web interface and configure the storage pools, users, and 
+        apps, with any troubleshooting being aided by the <a href="https://wiki.serversatho.me/">Servers@Home Wiki</a>.
+    </p>
+
+
+    <p>
+        This project helped me strengthen my understanding of Linux systems, networking, and storage management, as well as 
+        familiarizing myself with headless server management. This also helped me familiarize myself with Docker and containers, 
+        having to configure and manage multiple containers for different applications. This project also made me more comfortable 
+        with troubleshooting hardware and software issues, and using Wiki documentation to solve problems.
+    </p>
+
+
+    <p>
+        Some of the shortcomings with this server include the fact that the older hardware does limit some of what I can run,
+        such as how I was unable to run a Minecraft server due to CPU and RAM limitations. Additionally, while I do have a graphics
+        card installed, I got it recently, and have not found the time to passthrough the GPU for hardware transcoding in Plex. 
+        This results in .265 HEC video playback on Plex being choppy unwatchable experience, forcing
+        me to use .264 encoding, resulting in less efficient storage use. Lastly, the motherboard only has 4 SATA ports, meaning 
+        that I am limited to 4 total drives without the use of expansion cards, and due to my storage needs, all of them are running 
+        in the least secure RAID0 configuration, meaning that if one drive fails, all data is lost.
+    </p>
+
+    <p>
+        Overall though, I am very happy with how this project turned out, and how much utility I have been able to get out of it, 
+        especially considering the only cost is the electricity to power it.
+    </p>
+  </body>
+</html>

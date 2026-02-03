@@ -1,0 +1,75 @@
+/* Used color dropper to get exact hex code for the background */
+body{
+    background-color: #add8e6;
+}
+
+h1 {
+    font-size: 72px;
+    text-align: center;
+    font-family:'arial black', 'avant garde', 'sans serif';
+}
+
+/* Tried to line up the end of the word to figure out font size using picture. Both end at amet */
+h2{
+    font-size: 32px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h3 {
+    font-size:19px;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+}   
+
+#paragraph2 {
+    background-color: white;
+    line-height: 150%;
+
+    border-style: solid;
+    width: 45%;
+    padding:25px 50px;
+    margin: 20px;
+
+    border-color: green;
+}
+
+/* Blue paragraphs, can't tell very well if image is actually bold but I think it is */ 
+.blue{
+    color: white;
+    background-color: darkblue;
+    font-weight: bold;
+
+    width: 98%;
+    padding:20px;
+}
+
+ol {
+  list-style-type: decimal-leading-zero;
+}
+
+/* AI ASSISTED SOLUTION */
+ol li::marker {
+  font-size: 1.5em;
+}
+
+a[target="_blank"]{
+    color: darkred;
+}
+
+
+table, th, td {
+    border: 1px solid;
+    padding: 10px;
+    border-collapse: collapse;
+
+    background-color: white;
+
+}
+
+th {
+    background-color: lightgrey;
+    padding: 0px;
+
+}

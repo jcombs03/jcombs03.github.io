@@ -1,0 +1,25 @@
+
+#jumpMenu {
+    position:fixed;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    width:150px;
+    background-color:yellow;
+    padding:20px;
+    flex:right;
+
+
+    text-align:center;
+
+    /*this does not work very well, fix later*/
+    line-height:370%;
+}
+
+
+#container {
+    display:flex;
+    flex-wrap:wrap;
+    text-align: justify;
+    width:200px;
+}

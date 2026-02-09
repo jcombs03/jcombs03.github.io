@@ -1,0 +1,153 @@
+
+body {
+    display: flex;
+    margin: 0; /* Removes default body margin */
+}
+
+#menuItems { /* Jump menu on left side of screen */
+    width: 15vw;
+    background-color: purple;
+    color: white;
+    text-align: center;
+
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+#menuItems button { /* Formats all buttons under menuItems */
+    background-color:blue;
+    color:white;
+    font-size:2rem;
+    width:15vw;
+    border:2px solid grey;
+    padding:0px;
+}
+
+#menuItems button:hover { /* On hover properties for all menuItem buttons */
+    background-color:coral;
+}
+
+/* AI assisted function */
+#recentArticles:hover + #jumpMenu,
+#jumpMenu:hover {
+    display: block;
+}
+
+#jumpMenu { /* Formats the unordered list */
+    display:none;
+    width:15vw;
+    list-style-type:none; /* Removes the bullet points */
+    background-color:coral;    
+    /* Removes the indent native to unordered lists */
+    padding:0;
+    margin:0;
+}
+
+#jumpMenu a { /* Formats text in the list */
+    color:red;
+    font-size:1.2rem;
+}
+
+#jumpMenu li:hover, #jumpMenu li:hover > a {
+    background-color:blue;
+    color:white;
+}
+
+
+main { /* Right side of the screen */
+    flex: 1;
+}
+
+header { /* MyBlog.com red header at the hop*/
+    position:sticky;
+    top:0px;
+    font-size:20px;
+    padding:1.2rem;
+    margin:0px;
+    background-color:red;
+    text-align:center;
+}
+
+header > p { /* MyBlog.com text */
+    margin:0px;
+    font-size:3em;
+    padding:3%
+}
+
+h1 { /* "Recent Journal Articles" */
+    text-align:center;
+    font-size:48px;
+    margin-bottom:0px;
+    margin-top:10px;
+}
+
+div { /* Container that holds all articles */
+    padding:3%;
+}
+
+#container p { /* Padding for the articles */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div h2 { /* Applies to 'Article x' */
+    font-size:20px;
+    text-align:left;
+    margin-bottom:0px;
+    
+}
+
+#container { /* AI assisted */
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem; /* AI assisted */
+}
+
+#container article { /* Formatting for the individual article boxes */
+    flex:300px;
+    text-align: justify;
+    padding:1%;
+    color:grey;
+    transition-duration:2s;
+}
+
+#container article:hover { /* Handles logic for hovering over article */
+    color:black;
+    font-size:25px;
+    flex:400px;
+
+}
+
+/* AI assisted next 2 functions */
+#container a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem; /* space between icon and text */
+}
+#container a::after { /* Adds link icon after link */
+    content: "";
+    width: 1em;
+    height: 1em;
+    background-image: url("https://en.wikipedia.org/w/skins/Vector/resources/skins.vector.styles/images/link-external-small-ltr-progressive.svg?fb64d");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+h2 + p::first-letter { /* Formats first letter in article without formatting Thank you or Read more */
+    font-size:36px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#thanks { /* Thanks at the bottom right */
+    position:fixed;
+    text-align:center;
+    font-size:2em;
+    border:3px solid red;
+    background-color:white;
+    bottom:0px;
+    right:0px;
+    margin:0; /* Forces box to be flush with the bottom of the screen */
+    padding: 0.75em 1em;
+}

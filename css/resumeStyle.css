@@ -1,0 +1,111 @@
+/* AI DISCLOSURE: ALL OF THE FOLLOWING CODE WAS AI GENERATED */
+/* AI DISCLOSURE: ALL OF THE FOLLOWING CODE WAS AI GENERATED */
+/* AI DISCLOSURE: ALL OF THE FOLLOWING CODE WAS AI GENERATED */
+/* AI DISCLOSURE: ALL OF THE FOLLOWING CODE WAS AI GENERATED */
+/* AI DISCLOSURE: ALL OF THE FOLLOWING CODE WAS AI GENERATED */
+/* (Repeated multiple times for clarity) */
+
+/* ===== Reset ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Base styles ===== */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background-color: #fff;
+}
+
+/* ===== Header ===== */
+.header {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 3rem;
+}
+
+.header h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.header img {
+  max-width: 180px;
+  border-radius: 50%;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.links a {
+  color: #0a66c2;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Sections ===== */
+.sections {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 3rem 3rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+section h3 {
+  font-size: 1.3rem;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 0.5rem;
+}
+
+ul {
+  margin-left: 1.25rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* ===== Mobile (≤ 412px) ===== */
+@media (max-width: 412px) {
+  .header {
+    padding: 1.5rem 1rem;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .header-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .sections {
+    grid-template-columns: 1fr;
+    padding: 0 1rem 2rem;
+  }
+
+  .header img {
+    max-width: 140px;
+  }
+}

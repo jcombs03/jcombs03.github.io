@@ -1,0 +1,46 @@
+/* AI GENERATED CSS with slight modifications */
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 16px;
+  background-color: lightblue;
+}
+
+section {
+  margin-bottom: 24px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.error {
+  color: red;
+}
+
+#team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.team-card {
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 140px;
+  background-color: #e8f4fc;
+}
+
+.team-card img {
+  width: 80px;
+  height: 80px;
+}
+
+.team-card p {
+  margin: 2px 0;
+  font-size: 13px;
+  text-transform: capitalize;
+}

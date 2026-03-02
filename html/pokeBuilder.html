@@ -1,0 +1,47 @@
+<!-- AI GENERATED HTML --> 
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Pokemon Team Builder</title>
+    <link rel="stylesheet" href="../css/pokeBuilder.css">
+  </head>
+
+  <body>
+
+    <h1>Pokemon Team Builder</h1>
+
+    <!-- Search -->
+    <section>
+      <h2>Find a Pokemon</h2>
+      <input type="text" id="pokemon-input" placeholder="Enter name or ID (e.g. pikachu, 25)" />
+      <button id="search-btn">Search</button>
+      <p id="error-msg" class="error"></p>
+    </section>
+
+    <!-- Pokemon info (hidden until a search succeeds) -->
+    <section id="pokemon-section" style="display:none">
+      <h2 id="pokemon-name"></h2>
+      <img id="pokemon-sprite" src="" alt="" />
+      <br>
+      <button id="cry-btn">Play Cry</button>
+
+      <h3>Select Moves</h3>
+      <label>Move 1: <select id="move1"></select></label><br>
+      <label>Move 2: <select id="move2"></select></label><br>
+      <label>Move 3: <select id="move3"></select></label><br>
+      <label>Move 4: <select id="move4"></select></label><br>
+      <br>
+      <button id="add-btn">Add to Team</button>
+      <p id="team-msg" class="error"></p>
+    </section>
+
+    <!-- Team display -->
+    <section>
+      <h2>My Team (<span id="team-count">0</span> / 6)</h2>
+      <div id="team-grid"></div>
+    </section>
+
+    <script src="../js/pokeBuilder.js"></script>
+  </body>
+</html>

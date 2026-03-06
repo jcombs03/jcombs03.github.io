@@ -13,7 +13,6 @@ function showFilter(){
 }
 
 // Handles the checkboxes for the filter
-// AI-GENERATED FUNCTION
 function filterArticles(){
 
     const showOpinion = document.getElementById("opinionCheckbox").checked;
@@ -46,7 +45,6 @@ function showAddNew(){
 }
 
 // Adds the new article to the list with the given input and properties
-// AI-GENERATED FUNCTION
 function addNewArticle(){
 
     const title = document.getElementById("inputHeader").value.trim();
